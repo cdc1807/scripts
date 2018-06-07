@@ -3,7 +3,7 @@
 name=$1
 statement=$2
 
-name_lower="$(echo "$name" | tr '[:lower:]')"
+name_lower="$(echo $name | tr '[:lower:]')"
 
 #echo "$name..." && echo -en "travis_fold:start:$name_lower\\r"
 echo "$name..." && echo "travis_fold:start:$name_lower"
