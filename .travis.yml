@@ -12,6 +12,11 @@ script:
   - echo -en "travis_fold:end:test123\\r"
   - travis_fold CustomTest ./bash/catch.sh
   - ./travis_fold CustomTest2 ./bash/catch.sh
+  - echo "travis_fold:start:aahhh folding starts"
+  - echo "-------------------------------------------------------"
+  - echo "*******************************************************"
+  - echo "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
+  - echo "travis_fold:end:aahhh folding ends"
   # - |
   #     echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
   #     echo "goodbye world"
