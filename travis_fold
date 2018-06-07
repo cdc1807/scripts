@@ -5,6 +5,7 @@ statement=$2
 
 name_lower="$(echo "$name" | tr '[:lower:]')"
 
-echo "$name..." && echo -en "travis_fold:start:$name_lower\\r"
+#echo "$name..." && echo -en "travis_fold:start:$name_lower\\r"
+echo "$name..." && echo "travis_fold:start:$name_lower"
 eval "$2"
-echo -en "travis_fold:end:$name_lower\\r"
+echo "travis_fold:end:$name_lower"

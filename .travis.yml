@@ -11,6 +11,7 @@ script:
   - echo "hello world again"
   - echo -en "travis_fold:end:test123\\r"
   - travis_fold CustomTest ./bash/catch.sh
+  - ./travis_fold CustomTest2 ./bash/catch.sh
   # - |
   #     echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
   #     echo "goodbye world"
