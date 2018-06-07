@@ -8,8 +8,9 @@ script:
   - echo "hello world"
   - echo "travis_fold:end:HELLO folding ends"
   - echo "Test123..." && echo -en "travis_fold:start:test123\\r"
-  - ./bash/travis_testing.sh
+  - echo "hello world again"
   - echo -en "travis_fold:end:test123\\r"
-  - echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
-  - ./bash/travis_testing.sh
-  - echo "travis_fold:end:testabcdefg"
+  - |
+      echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
+      echo "goodbye world"
+      echo "travis_fold:end:testabcdefg"
