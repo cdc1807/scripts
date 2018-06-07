@@ -7,12 +7,9 @@ script:
   - echo "travis_fold:start:HELLO folding starts"
   - echo "hello world"
   - echo "travis_fold:end:HELLO folding ends"
-  - echo "Test123..." && echo -en "travis_fold:start:script.2\\r"
-  - ./bash/catch.sh
-  - echo -en "travis_fold:end:script.2\\r"
-  - echo "Test123..." && echo "travis_fold:start:script.3"
-  - |
-      echo 1 2 3
-      echo 4 5 6
-      echo 7 8 9
-  - echo "travis_fold:end:script.3"
+  - echo "Test123..." && echo -en "travis_fold:start:test123\\r"
+  - ./bash/travis_testing.sh
+  - echo -en "travis_fold:end:test123\\r"
+  - echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
+  - ./bash/travis_testing.sh
+  - echo "travis_fold:end:testabcdefg"
