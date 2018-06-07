@@ -4,13 +4,13 @@ language: python
 os: linux
 
 script:
-  - echo "travis_fold:start:HELLO folding starts"
+  # - echo "travis_fold:start:HELLO folding starts"
   - echo "hello world"
-  - echo "travis_fold:end:HELLO folding ends"
-  - echo "Test123..." && echo -en "travis_fold:start:test123\\r"
-  - echo "hello world again"
-  - echo -en "travis_fold:end:test123\\r"
-  - |
-      echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
-      echo "goodbye world"
-      echo "travis_fold:end:testabcdefg"
+  # - echo "travis_fold:end:HELLO folding ends"
+  # - echo "Test123..." && echo -en "travis_fold:start:test123\\r"
+  # - echo "hello world again"
+  # - echo -en "travis_fold:end:test123\\r"
+  # - |
+  #     echo "TestABCDEFG..." && echo "travis_fold:start:testabcdefg"
+  #     echo "goodbye world"
+  #     echo "travis_fold:end:testabcdefg"
